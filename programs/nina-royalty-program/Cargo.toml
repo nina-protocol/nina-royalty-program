@@ -1,0 +1,19 @@
+[package]
+name = "nina-royalty-program"
+version = "0.1.0"
+description = "Created with Anchor"
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "nina_royalty_program"
+
+[features]
+no-entrypoint = []
+no-idl = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-lang = "0.4.4"
+anchor-spl = "0.4.4"
